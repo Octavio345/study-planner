@@ -1,0 +1,12 @@
+[build]
+builder = "NIXPACKS"
+
+[build.arguments]
+INSTALL_CMD = "cd server && npm install"
+START_CMD = "cd server && npm start"
+
+[deploy]
+startCommand = "cd server && npm start"
+
+[env]
+NODE_ENV = "production"
